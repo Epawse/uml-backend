@@ -13,6 +13,7 @@ public class LoginController {
 
     @RequestMapping(value = "/admin/login", method = RequestMethod.POST)
     public CommonResult login(@RequestBody User user) {
+        // 便于测试
         if (user.getUsername().equals("admin") && user.getPassword().equals("123456"))
             return CommonResult.success("admin");
         else

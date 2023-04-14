@@ -33,7 +33,7 @@ public interface UserDao {
     User findByName(@Param("userName") String userName);
 
     /**
-     * 查询所有数据，用md5加密
+     * 查询所有数据
      */
     @Select("select * from users")
     List<User> findAll();
